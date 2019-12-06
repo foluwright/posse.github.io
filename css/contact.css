@@ -1,0 +1,74 @@
+
+@media (max-width: 768px) {
+.parallax_banner {
+    background-attachment: scroll !important;
+}
+}
+
+.parallax_banner {background-attachment: fixed;}
+
+
+.contact_info_intro {color: #fff;
+     padding-top: 38%; display: flex;
+    flex-direction: column; justify-content: center; line-height: 1.2;}
+
+.contact_company{ line-height: 1;font-size: 2.5em; font-weight: 300;}
+.contact_info_intro p {font-weight: 300;font-size: 1.5em;}
+.contact_info_intro .contact_phone {font-size: 2em;line-height: 1;margin-bottom: 0; font-family: 'Lato', sans-serif;}
+
+
+/*Form*/
+@media (min-width: 1024px){
+    .con{
+        padding:0px 24%;
+    }
+}
+.con-text {text-align: center;}
+.con-tex { color:#3f51b5}
+button.btn.btn-default {
+    width: 100%;
+    color: #fff;
+    background-color: #3f51b5;
+}
+
+
+/*location*/
+#locations{
+    margin-top: 0.4%;
+    margin-bottom: 0.4%;
+    font-family: 'Lato', sans-serif;
+}
+.locations p {
+    padding: 0 5%;
+    color: #fff;
+    z-index: 1;
+}
+
+.locations .locations_code {
+    font-size: 5em;
+    font-weight: 920;
+    color: rgba(255,255,255,.75);
+    margin-bottom: 0;
+}
+
+#locations .col-md-3 {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.city_inner {
+    color:#fff;
+    width: 1px;
+    max-width: 170px;
+    min-width: 170px;
+    text-align: center;
+    z-index: 1;
+}
+
+.city_code {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+}

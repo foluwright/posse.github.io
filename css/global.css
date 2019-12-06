@@ -1,0 +1,130 @@
+html,body{
+  margin: 0;
+  width:100%;
+  padding:0px;
+  height: 100%;
+}
+body {font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif}
+
+body{
+  overflow-x: hidden;
+}
+
+.btn,
+.navbar-default,
+h1,h2,h3,h4,h5,h6 {font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif}
+
+
+/*NAV*/
+i.fa.fa-bars {color: white;}
+.navbar-default,.navbar-default a,
+.navbar-default li {-webkit-transition: all .35s;-moz-transition: all .35s;}
+.navbar-default.affix {background-color: #3f51b5; border-color: rgba(34, 34, 34, 0.05);height: 60px;box-shadow: 0px 3px 5px #333;}
+.navbar-default.affix .navbar-nav li.active-tab, .navbar-default.affix .navbar-nav li:hover, .navbar-default.affix .navbar-nav li:focus {
+  background-color:  #2e3b84; border-bottom: none;}
+  @media (max-width:767px){
+    .navbar-default.affix-top{
+      background-color: #3f51b5; border-color:transparent;
+    }
+  }
+.navbar-default .nav li a {color: #fff;font-size: 20px;font-weight: 900;letter-spacing: 1px;}
+.navbar-default .nav li a:focus {color: #212121;}
+
+@media (min-width: 768px) {
+  .navbar-default {background-color: transparent;border-bottom: none;height: 100px;}
+  ul.nav.navbar-nav li.active-tab, ul.nav.navbar-nav li:hover, ul.nav.navbar-nav li:focus {
+    background-color: transparent;border-bottom-style: solid;
+    border-bottom-color:  #175082;border-bottom-width: 5px;
+  }
+  ul.nav.navbar-nav li.active-tab a, ul.nav.navbar-nav li:hover a, ul.nav.navbar-nav li:focus a {
+    color: #FFFFFF !important;
+  }
+  ul.nav.navbar-nav li a {padding: 20px 15px;color: #FFFFFF !important;}
+}
+.navbar-brand {margin-top:2%; color: #fff !important;
+  font-size: 30px;}  
+  @media (min-width: 768px){
+    .navbar-brand {display:flex;}
+    i.fa.fa-plane { display:none;}
+  }
+  .navbar-brand>img {width: 42px;height: 35px; margin-top: -3%; }
+
+@media (max-width: 767px){
+  .showHide li a{padding-bottom: 2%;   color: #F6D059 !important; font-weight:990;}
+  .navbar-brand{ font-size: 25px;padding: 18px 15px;}
+   .navbar-brand>img {display:none;}
+   .foot>img{width: 20% !important;}
+
+}
+i.fa.fa-plane {padding-right: 9px;}
+
+@media (max-width: 769px) {
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {background-color: #3f51b5;border: none;}
+}
+
+@media (min-width: 768px) {
+  .navbar-right {float: right !important;}
+}
+
+
+
+/*City*/
+
+/*Footer*/
+/*1st*/
+.ask{
+  display: block !important;
+  font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-size: 14px;
+}
+.showHide { display: none; 
+}
+
+ /* Desktop */
+@media screen and (min-width: 768px) {
+  .showHide  { display: block; }
+  .showHide li {color:#fff !important;}
+  footer a { display: none;}
+  footer > .container {
+    max-width: 730px;
+  }
+}
+@media screen and (min-width: 992px){
+  footer > .container {
+    max-width: 976px;
+  }
+}
+@media (min-width: 1440px) {
+footer > .container {max-width: 1156px;}
+}
+@media (min-width: 1600px) {
+footer >  .container {max-width: 1180px;}
+}
+@media (min-width: 1200px){
+footer > .container { max-width: 1140px;}
+}
+footer li {list-style: none;color:#f5f5f5;}
+footer a{font-family: 'Roboto',sans-serif; color:#fff !important; font-weight: 900;}
+ footer a:focus, a:hover{text-decoration: none;}
+
+#foot {background-color: #3f51b5;padding:2% 0%;}
+.foot{ /*border-bottom: 1px solid #eef1f5;*/
+  padding-bottom: 1rem !important;}
+  .foot>img { width: 38%;}
+
+  
+
+Footer
+footer {height: 200px;width: 100%;}
+@media (max-width: 991px) {
+  footer {padding: 15px 0;height: auto;}
+}
+
+.credit a{display:inline-block;}
+.credit{color: #fff;margin-top: 2%;}
+.copyright { text-align: center;}
+.social-media {text-align: center;font-size: 11px;}
+.social-media ul {list-style: none;  padding: 0;}
+.social-media ul li {  display: inline-block; margin: 0 5px;}
+.social-media ul li i {  color: #fff;}
+.social-media ul li i:hover, .social-media ul li i:focus {color:  rgb(236, 226, 226);}

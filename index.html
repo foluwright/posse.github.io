@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Courgette|Roboto+Slab:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300|PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css"/>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top affix-top" id="mainNav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i></button><a class="navbar-brand" href="index.html" style="font-family: Courgette,cursive;"><i class="fa fa-plane"></i><img src="img/try.png">Airway Express</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#select-flight">Book a flight</a></li>
+                    <li><a href="#promo">Services</a></li>
+                    <li><a href="#locations">Locations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home-header" class="container-fluid">
+        <section class="row">
+            <div class="col col-lg-12">
+                <div>
+                    <img class="slide" src="img/header1.1.jpg" style="width:100%; height:100vh; margin:auto ">
+                </div>
+                <div>
+                <img class="slide" src="img/header2.1.jpg" style="width:100%; height:100vh; margin:auto ">
+            </div>
+            <div>
+                <img class="slide" src="img/header3.1.jpg" style="width:100%; height:100vh; margin:auto ">
+            </div>
+            <div>
+                <img class="slide" src="img/header4.1.jpg" style="width:100%; height:100vh; margin:auto ">
+            </div>
+            <!--<div class="header-content-inner">
+                <img src="img/large-logo.png">
+            </div>-->
+            </div>
+            <div class="slogan">We get you there in the blink of an eye.</div>
+        </section>
+        <form name="flight-form" method="POST">
+
+                <section id="select-flight" class="container">
+                
+                <article class="row flight-header">
+                    <div class="col col-md-6 col-lg-6">
+                        <span>Book a Flight</span>
+                    </div>
+                    <div class="col col-md-6 col-lg-6 text-right">
+                        <span>Recent</span>
+                    </div>
+                </article>
+                
+                <article class="row flight-selector">
+                    <div id="round-trip" class="col col-md-6 col-lg-6 text-center active">
+                        <span>Round Trip</span>
+                    </div>
+                    <div id="one-way" class="col col-md-6 col-lg-6 text-center">
+                        <span>One Way</span>
+                    </div>
+                </article>
+                
+                
+                <article class="row airport-selector" style="margin-top: 2%;">
+                    <div id="from-airport" class="col col-md-6 col-lg-6 text-center">
+                        <div class="title">From</div>
+                        
+                
+                        <div class="dropdown">
+                            <select class="select-airport" name="">
+                            <option value="Atlanta, GA">Atlanta, GA</option>
+                            <option value="">Miami, FL</option>
+                            <option value="">Birmingham, AL</option>
+                            <option value="">Nasville, TN</option>
+                            <option value="">Charleston, SC</option>
+                            <option value="">Charlotte, NC</option>
+                        </select>
+                        </div>
+                
+                        <div class="small"><small>Select Airport</small></div>
+                    </div>
+                    <div id="to-airport" class="col col-md-6 col-lg-6 text-center">
+                        <div class="title">To</div>
+                        
+                
+                        <div id="select-airport-dropdown" class="dropdown">
+                            <select class="select-airport" name="">
+                            <option value="Atlanta, GA">Atlanta, GA</option>
+                            <option value="">Miami, FL</option>
+                            <option value="">Birmingham, AL</option>
+                            <option value="">Nasville, TN</option>
+                            <option value="">Charleston, SC</option>
+                            <option value="">Charlotte, NC</option>
+                        </select>
+                        </div>
+                
+                        <div  id="small"   class="small"><small>Select Airport</small></div>
+                    </div>
+                </article>
+                
+                <hr>
+                <article class="row airport-selector">
+                    <div id="departure" class="col col-md-6 col-lg-6 text-center">
+                        <div class="date-selector">
+                            <input id="depart-date" type="date">
+                        </div>
+                        <div class="small"><small>Select Departure</small></div>
+                    </div>
+                    <div id="return" class="col col-md-6 col-lg-6 text-center">
+                        <div class="date-selector">
+                            <input id="return-date" type="date">
+                        </div>
+                        <div class="small"><small>Select Return</small></div>
+                    </div>
+                </article>
+                
+                <hr>
+                
+                <article class="row person-selector" style="margin-top: -1%; margin-bottom: -6%;">
+                    <div id="adult-selector" class="col col-md-6 col-lg-6 text-center">
+                        <div class="flex-container">
+                            <div id="adult-minus" class="quantity"><span><i class="fa fa-minus-circle"></i></span></div>
+                            <div id="adults">0</div> 
+                            <div id="adult-plus" class="quantity"><span><i class="fa fa-plus-circle"></i></span></div>
+                        </div>
+                        <div class="small"><small># of Adults</small></div>
+                    </div>
+                    <div id="to-airport" class="col col-md-6 col-lg-6 text-center">
+                        <div class="flex-container">
+                            <div id="child-minus" class="quantity"><span><i class="fa fa-minus-circle"></i></span></div>
+                            <div id="children">0</div> 
+                            <div id="child-plus" class="quantity"><span><i class="fa fa-plus-circle"></i></span></div>
+                        </div>
+                            <div class="small"><small># of Children</small></div>
+                        </div>
+                </article>
+                
+                
+                <article class="row person-selector">
+                    <div id="adult-selector" class="col col-md-12 col-lg-12 text-center">
+                        <button class="btn btn-default">Book Flight</button>
+                    </div>
+                </article>
+                
+                
+                </section>
+                
+                </form>
+    </header>
+
+    <section id="promo" class="container-fluid">
+        <div class="row promo-quilt" id="promo-quilt">
+            <div class="text-center">
+                <div class="h1 promo-title" style="font-family: 'Oswald', sans-serif;">Express Way</div>
+            </div>
+        </div>
+        <div class="promo-quilt-con">
+            <div class="container">
+                <div class="row promo-quilt-top">
+                    <div class="col-sm-6 col-12 promo-quilt-image" id="promo-quilt-image" >
+                        <div class="promo-quilt-image" style="background-image: url('img/promo.jpg'); background-size: cover; background-repeat: no-repeat; background-position: 50% 0%; padding-bottom: 50%;">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-12 promo-content">
+                        <div class="promo-content">
+                            <span class="h4 promo-title" style=" font-size:23px; font-weight: 900;">Welcome Aboard</span>
+                            <p class="promo-text">We understand that your needs can change last minut, and we're ready to adapt our services quickly to ensure your success</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row promo-quilt-middle">
+                    <div class="col-12 quilt-2-img" data-aos= "fade-up"  data-aos-mirror="false" style="background-image: url('img/promo1.jpg');background-size: cover; background-repeat: no-repeat;background-position: 50% 78%; padding-bottom: 34%;">
+                    </div>
+                    <div class="col-sm-6 col-12 pro" data-aos= "fade-right"  data-aos-mirror="true" data-aos-delay="50">
+                        <div class="pro">
+                            <span class="h4 promo-title" style="letter-spacing: 0.084225rem;">Adjustable Seats</span>
+                            <p class="promo-text">Get comfortable as  you fly with Adjustable seats.Take a nap or relax while watching moving all from the comfort of your seats</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row promo-quilt-bottom" style="padding-bottom: 1%;">
+                    <div class="col-sm-6 col-12 promo-quilt-imag" data-aos="fade-left" data-aos-offset="100" data-aos-delay="100">
+                        <div class="col-12  image-container">
+                            <div class=" image-container" style="background-image: url('img/meal.webp'); background-size: cover; background-repeat: no-repeat; background-position: 50% 0%; padding-bottom:50%;">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-12 promo-content-wrapper" data-aos="right" data-aos-delay="100">
+                        <div class="promo-con">
+                            <span class="h4 promo-title" style="letter-spacing:0.08425rem;">Fine Dining Service</span>
+                            <p class="promo-text">
+
+                                When you spend a lot of time in the air, what you eat and how you pass the time matters. Explore the plated meals & amenities you will enjoy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reward" style="background-color: gainsboro;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="reward-title">Express Rewards</div>
+                    <div class="reasontext">
+                        You can
+                        <br>
+                        <span class="fli animated  fadeInUp 9s">Earn 2 miles per dollar spent</span>
+                        <span class="fli animated  fadeInUp 9s"> Earn Unlimited miles</span>
+                        <span class="fli animated  fadeInUp 9s"> Join for free</span>
+                    </div>
+                      <div class="logo">
+                          <img src="img/logo.png">
+                      </div>
+                </div>
+                <div class="col-md-8" style=" opacity: 55%; background-image: url(img/testimonial.jpg); background-size: cover; background-repeat: no-repeat; background-position: center bottom; outline: none; height: 313px;
+    background-position: 0% 50%;">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="intro" class="container-fluid">
+        <article class="row">
+            <div class="int animated  fadeInUp 9s">
+                <p class="wel">Welcome aboard.</p>
+                <p class="com">How can we help?</p>
+            </div>
+            <div class="int animated  fadeInUp 9s">
+                <p class="wel">Bienvenido a bordo.</p>
+                <p class="com">Cómo podemos ayudar?</p>
+            </div>
+            <div class="int animated  fadeInUp 9s">
+                <p class="wel">Bienvenue à bord.</p>
+                <p class="com">Comment pouvons nous vous aider?</p>
+            </div>
+            <div class="int animated  fadeInUp 9s">
+                <p class="wel">欢迎登机.</p>
+                <p class="com">我们能帮你什么吗?</p>
+            </div>
+            <div class="int animated  fadeInUp 9s">
+                <p class="wel">Chào mừng.</p>
+                <p class="com">Làm thế nào chúng ta có thể giúp đỡ?</p>
+            </div>
+        </article>
+
+    </section>
+<section id="home_careers"class="home_careers">
+    <div>
+    <div class="row">
+        <div class="col col-md-8" style="height:393px; display: flex !important;">
+            <div class="col-md-3 career_path" style="background-image: url('img/careers/pilot.jpg'); background-size: cover; background-repeat: no-repeat; width: 100%;">
+                <a  data-toggle="modal" data-target="#pilot-modal" class="block"><div>Pilots</div></a>
+            </div>
+            <div class="col-md-3 career_path" style="background-image: url('img/careers/hostess.jpg'); background-size: cover; background-repeat: no-repeat; width: 100%;">
+                <a data-toggle="modal" data-target="#hostess-modal"  class="block"><div>Flight<br>Attendants</div></a>
+            </div>
+            <div class="col-md-3 career_path" style="background-image: url('img/careers/mechanic.jpg'); background-size: cover; background-repeat: no-repeat; width: 100%;">
+                <a data-toggle="modal" data-target="#mech-modal"  class="block"><div>Mechanics</div></a>
+            </div>
+            <div class="col-md-3 career_path" style="background-image: url('img/careers/admin.jpg'); background-size: cover; background-repeat: no-repeat; width: 100%;">
+                <a data-toggle="modal" data-target="#admin-modal"  class="block"><div>Operations &amp;<br>Administrative</div></a>
+            </div>
+        </div>
+        <div class="col col-md-4 career_text">
+            <h2 style="outline: none;">Choose a career that takes you places.</h2>
+            <p>Pilots, flight attendants, mechanics, and operations and administrative positions.</p>
+            <span class="section_btn">Opportunity awaits</span>
+        </div>
+    </div>  
+    <div class="modal fade" id="pilot-modal" role="dialog">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Pilots</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Flying with Airway Express can be  one of the most rewarding experiences of your aviation career. We are committed to compensating for experience and focused on quality of life for our aircrew. 
+                      As a crewmember with Airway, you will experience flying local routes while enjoying the benefit of being home based.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+  </div> 
+    <div class="modal fade" id="hostess-modal" role="dialog">
+                <div class="modal-dialog modal-md">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Flight-attendants</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Join the Airway family where we encompass more than 300 professional flight attendants from 6 different US bases. Our flight attendants share a collective passion for caring for our customers. Our crew aims to exceed expectations, inspire through genuine hospitality, and ensure the safety of each and every customer onboard.
+                      </p> <br>
+                             <p>
+                            Enjoy the diversity of experiences, cultures, and people with each flight.
+                            <br>
+                            Do you desire to work for a company that strongly promotes from within? Airway Express has an excellent initial new hire training program. 
+                            Within six months you may be eligible to join our exemplary purser team. The sky is the limit.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+     </div>  
+     <div class="modal fade" id="mech-modal" role="dialog">
+            <div class="modal-dialog modal-md">
+         <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Mechanics</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>Our maintenance teams provide 24/7 coverage around the nation, dedicated to ensuring a safe flight for passengers and crew.
+                               We value the critical skill sets and aircraft knowledge that comes with being a mechanic with Airway.
+                               Grow your career from the ground up at any of our bases or at our corporate headquarters in Atlanta, GA.
+                          </p>
+                        <p>Our comprehensive benefits package is designed with you in mind. Medical, dental, vision, company paid life insurance, 401K with company match, employee assistance program and more!</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+     </div> 
+     <div class="modal fade" id="admin-modal" role="dialog">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Operations & Administrative</h4>
+                </div>
+                <div class="modal-body">
+                  <p>The administrative team at Airway Express pride ourselves on providing our employees with work experience built on family values. Your contributions to the team impact the lives of passengers on a daily basis.
+                  </p>
+                  <p>
+            Our comprehensive benefits package is designed with you in mind. Medical, dental, vision, company paid life insurance, 401K with company match, employee assistance program and more!</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+    </div>
+</section>
+    <section id="locations" class="locations">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col col-xs-6 col-md-4" data-aos="fade-down-right" style="background-image: url(img/states/florida.jpg); background-position: center center; background-size: cover; height:273px; outline: none;">
+            <p style="margin-bottom:0; margin-top: 21%;">Miami Base</p>
+            <p class="locations_code">MIA</p>
+            <p>Miami<br>International Airport</p>
+            </div>
+            <div class="col col-xs-6 col-md-4" data-aos="zoom-in-down"  data-aos-delay="100" style="background-image: url(img/states/alabama.jpg); background-position: center center; background-size: cover; height:273px; outline: none;">
+                <p style="margin-bottom:0; margin-top: 21%;">Birmingham Base</p>
+                <p class="locations_code">BHM</p>
+                <p>Birmingham-Shuttlesworth<br>International Airport</p>
+            </div>
+            <div class="col col-xs-6 col-md-4"  data-aos="fade-down-left"  data-aos-delay="200" style="background-image: url(img/states/tennessee.jpg); background-position: center center; background-size: cover; height:273px; outline: none;">
+                <p style="margin-bottom:0; margin-top: 21%;">Nashville Base</p>
+                <p class="locations_code">BNA</p>
+                <p>Nashville<br>International Airport</p>
+            </div>
+            <div class="col col-xs-6 col-md-4" data-aos="fade-up-right"   data-aos-delay="50" style="background-image: url(img/states/south.jpg); background-position: center center; background-size: cover;  height:273px; outline: none;">
+                <p style="margin-bottom:0; margin-top: 21%;">Charleston Base</p>
+                <p class="locations_code">CHS</p>
+                <p>Charleston<br>International Airport</p>
+            </div>
+            <div class="col col-xs-6 col-md-4" data-aos="zoom-in-up"  data-aos-delay="150" style="background-image: url(img/states/north.jfif); background-position: center center; background-size: cover;  height:273px; outline: none;">
+                <p style="margin-bottom:0; margin-top: 21%;">Charlotte Base</p>
+                <p class="locations_code">CLT</p>
+                <p>Charlotte Douglas<br>International Airport</p>
+            </div>
+            <div class="col col-xs-6 col-md-4"  data-aos="fade-up-left"  data-aos-delay="250" style="background-image: url(img/states/atlanta.jfif); background-position: center center; background-size: cover;  height:273px; outline: none;">
+                <p style="margin-bottom:0; margin-top: 21%;">Atlanta Headquaters</p>
+                <p class="locations_code">ATL</p>
+                <p>Hartsfield-Jackson Atlanta<br>International Airport</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer id="foot">
+        <div class="container">
+        <div class="row">
+            <div class="foot col col-sm-3">
+                 <img src="img/try.png">
+            </div>
+            <div class=" foot col col-sm-3">
+                <a  data-toggle="collapse" href="#cuooter" class="collapsed">Services</a>
+                <div id="cuooter" class="collapse showHide">
+                        <li><a  class="ask" href="#promo">Services</a></li>
+                        <li><a  class="ask" href="#select-flight">Book Flight</a></li>
+                        <li><a class="ask" href="#reward">Express Rewards </a></li>
+                        <li><a  class="ask" href="#locations">Locations</a> </li>
+                        
+                </div>
+            </div>
+            <div class="foot col col-sm-3">
+                    <a data-toggle="collapse" href="#pooter" class="collapsed">Contact</a>
+                    <div id="pooter" class="collapse showHide">
+                        <li><a class="ask" href="contact.html">Contact</a></li>
+                        <li><a class="ask" href="contact.html#contact">Questions</a></li>
+                        <li><a class="ask" href="#home_careers">Careers</a></li>
+                    </div>
+            </div>
+            <div class="foot col col-sm-3">
+                    </div>
+            </div>
+            <div class="row credit">
+               <div class="col-md-4" style="max-width: max-content;">
+                    <div class="copyright">
+                            <p>© Copyright 2019 Airway Express</p>
+                            <p>Credits for contents used can be found <a style="color:#F6D059 !important" href="credits.html">here</a>.</p>
+                        </div>
+               </div>
+               <div class="col-md-4">
+                    <div class="social-media">
+                            <ul>
+                                <li class="facebook"><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a></li>
+                                <li class="twitter"><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a></li>
+                                <li class="instagram"><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a></li>
+                                <li class="google-plus"><a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a></li>
+                                <li class="pinterest"><a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest-square fa-4x" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+               </div>
+               <div class="col-md-4">
+                   <h1 style="text-align: center;margin-top: 0;font-family: Courgette,cursive;">Airway Express</h1>
+               </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        mirror: "false",
+       offset: 50,
+       duration:600
+    });
+  </script>
+    <script src="js/flight.js" defer></script>
+    <script src="js/global.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/animations/home-animations.js"></script>
+</body>
+</html>
